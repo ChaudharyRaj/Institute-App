@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/button_back">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Admin_person"
+        android:id="@+id/admin_text"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Admin_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/admin_text"
+        android:src="@mipmap/user_logo"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Admin_logo"
+        android:id="@+id/liniarAdmin1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:id="@+id/Adminname_logo"
+            android:src="@mipmap/admin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Admin_name_text"
+            android:text="Admin_Name"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edit_Admin_name"
+        android:layout_marginLeft="5dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_below="@id/liniarAdmin1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Edit_Admin_name"
+        android:id="@+id/liniarAdmin2"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:id="@+id/password_logo"
+            android:src="@mipmap/admin_password_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Admin_password_text"
+            android:text="Password"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edit_Admin_password"
+        android:layout_marginLeft="5dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_below="@id/liniarAdmin2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Admin_Button"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/Edit_Admin_password"/>
+
+
+
+</RelativeLayout>
